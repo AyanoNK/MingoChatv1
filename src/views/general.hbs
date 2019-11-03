@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chat</title>
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="../public/css/styles.css"/>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../public/js/application.js"></script>
+</head>
+<body>
+    <main class="index">
+        <header class="general d-flex">
+            <div class="container p-4">
+                <!-- CHAT CONTAINER -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <!-- CARD HEADER-->
+                                <div class="card-header bg-dark text-white">
+                                    <h4>Chat General</h3>
+                                </div>
+
+                                <!-- WHERE THE CHAT MESSAGES GO-->
+                                <div id="chat" class="card-body">
+                                </div>
+
+                                    <!-- CARD FOOTER -->
+                                    <form id="message-form" class="card-footer">
+                                        <div class="input-group">
+                                            <!-- MESSAGE INPUT -->
+                                            <input type="text" id="message" class="form-control" />
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-warning" onclick="sendMessage()">
+                                                        <i class="fas fa-location-arrow"></i> Enviar
+                                                    </button>
+                                                </div>
+                                        </div>
+                                    </form>
+                            </div>
+                        </div>
+
+                        <!-- USERS SECTION-->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header bg-dark text-white">
+                                    <h3>Usuario</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div id="usernames"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </header>
+    </main>
+</body>
+  <!-- SCRIPTS -->
+<script src="../public/js/general.chat.js"></script>
+  
