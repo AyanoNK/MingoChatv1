@@ -1,4 +1,6 @@
 # MingoChatv1
+![MingoMainScreen](https://media.discordapp.net/attachments/167115754053828608/637059951369519115/unknown.png?width=945&height=484)
+
 Mingo Chat. 
  > Missing: friends and whispers.
 
